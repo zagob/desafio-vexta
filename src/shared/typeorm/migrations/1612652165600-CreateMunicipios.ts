@@ -15,16 +15,12 @@ export default class CreateMunicipios1612652165600
             default: "uuid_generate_v4()",
           },
           {
-            name: "user_id",
-            type: "uuid",
-          },
-          {
             name: "name",
             type: "varchar",
             isNullable: false,
           },
           {
-            name: "UF",
+            name: "uf",
             type: "varchar",
             isNullable: false,
           },
