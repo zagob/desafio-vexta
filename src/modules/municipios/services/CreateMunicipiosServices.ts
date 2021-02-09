@@ -1,9 +1,6 @@
 import { injectable, inject } from "tsyringe";
 
-// import AppError from "../../../shared/errors/AppError";
 import IMunicipiosRepository from "../repositories/IMunicipiosRepository";
-// import IHashProvider from "../providers/HashProvider/models/IHashProvider";
-
 import Municipio from "../infra/typeorm/entities/Municipio";
 
 interface Request {

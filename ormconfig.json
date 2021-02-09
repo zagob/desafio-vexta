@@ -8,7 +8,7 @@
     "password": "docker",
     "database": "banco-vexta",
     "entities": [
-      "./src/modules/users/infra/typeorm/entities/*.ts"
+      "./src/modules/**/infra/typeorm/entities/*.ts"
     ],
     "migrations": [
       "./src/shared/typeorm/migrations/*.ts"

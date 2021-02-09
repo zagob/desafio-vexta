@@ -4,7 +4,7 @@ import { classToClass } from "class-transformer";
 
 import CreateMunicipiosServices from "../../../services/CreateMunicipiosServices";
 
-export default class UsersController {
+export default class MunicipiosController {
   public async create(request: Request, response: Response): Promise<Response> {
     const { name, uf } = request.body;
 

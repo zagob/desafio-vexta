@@ -14,7 +14,7 @@ export default class CreateClientes1612652193725 implements MigrationInterface {
             default: "uuid_generate_v4()",
           },
           {
-            name: "cnpj-cpf",
+            name: "cnpj_cpf",
             type: "varchar",
             isNullable: false,
           },
@@ -24,7 +24,7 @@ export default class CreateClientes1612652193725 implements MigrationInterface {
             isNullable: false,
           },
           {
-            name: "name-fantasia",
+            name: "name_fantasia",
             type: "varchar",
             isNullable: false,
           },

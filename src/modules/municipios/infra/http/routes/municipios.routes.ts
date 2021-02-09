@@ -1,9 +1,13 @@
 import { Router } from "express";
+
+import ensureAuthenticated from "../../../../users/http/middlewares/ensureAuthenticated";
 import MunicipiosController from "../controllers/MunicipiosController";
 
-const usersRouter = Router();
+const municipiosRoutes = Router();
 const municipiosController = new MunicipiosController();
 
-usersRouter.post("/", municipiosController.create);
+municipiosRoutes.use(ensureAuthenticated);
 
-export default usersRouter;
+municipiosRoutes.post("/", municipiosController.create);
+
+export default municipiosRoutes;
